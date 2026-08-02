@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wallchemy</title>
+<meta name="description" content="Hand-finished sandstone LED wall panels with living hydroponic vases. Made to order in Dhaka.">
+<meta name="theme-color" content="#100E0C">
+<meta property="og:type" content="product">
+<link rel="icon" href="assets/mark-gold.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="lgDistort" x="0%" y="0%" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="2" seed="7" result="n"/>
+    <feGaussianBlur in="n" stdDeviation="3" result="nb"/>
+    <feDisplacementMap in="SourceGraphic" in2="nb" scale="16" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<div class="loader"><div class="loader-mark"></div></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="halo halo-a" aria-hidden="true"></div>
+<div class="halo halo-b" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html" aria-label="Wallchemy home">
+    <span class="brand-mark"></span>
+    <span class="brand-name">WALLCHEMY</span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html#collection">Collection</a>
+    <a href="index.html#craft">Craft</a>
+    <a href="index.html#order">How to order</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#community">Community</a>
+  </nav>
+  <div class="nav-tools">
+    <button class="toggle" id="themeBtn" aria-label="Switch between dark and light" title="Switch theme">
+      <span class="toggle-thumb">
+        <svg class="ico-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="4.2" fill="currentColor" stroke="none"/><path d="M12 1.6v2.2M12 20.2v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M1.6 12h2.2M20.2 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+      </span>
+    </button>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="page pdp" id="top">
+  <div class="shell">
+
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><i>/</i>
+      <a href="index.html#collection">Collection</a><i>/</i>
+      <a href="index.html#collection" id="crumbCat">—</a><i>/</i>
+      <span id="crumbName">—</span>
+    </nav>
+
+    <div class="pdp-grid">
+      <!-- gallery -->
+      <div class="pdp-media">
+        <div class="gallery" id="gallery">
+          <div class="gal-nav">
+            <button class="gal-btn" id="galPrev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M15 18 9 12l6-6"/></svg></button>
+            <button class="gal-btn" id="galNext" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+
+      <!-- buy panel -->
+      <div class="pdp-info">
+        <span class="eyebrow" id="pTag">—</span>
+        <h1 id="pTitle">—</h1>
+        <p class="pdp-lead" id="pLead"></p>
+
+        <div class="pricebar">
+          <span class="price" id="pPrice"></span>
+          <span class="badge">Made to order</span>
+        </div>
+
+        <div class="opts" id="pOpts"></div>
+
+        <div class="pdp-cta">
+          <button class="btn btn-primary" id="orderBtn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.7c0 3.2 1.5 6 3.8 7.8v3.8l3.5-1.9c.9.3 1.8.4 2.7.4 5.6 0 10-4.1 10-9.7S17.6 2 12 2zm1 13-2.6-2.7L5.4 15l5.5-5.8 2.6 2.7L18.5 9 13 15z"/></svg>
+            Order on Messenger
+          </button>
+          <a class="btn btn-ghost" href="https://www.facebook.com/groups/1007067638799316" target="_blank" rel="noopener">Ask in the group</a>
+        </div>
+
+        <ul class="trust glass">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Free delivery inside Dhaka. Cash on delivery.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Made to order — 5–7 days unless noted below.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>12-month warranty on the LED and adapter.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Damaged on arrival? Photo the same day, replaced free.</span></li>
+        </ul>
+
+        <p class="fineprint" id="pNote"></p>
+      </div>
+    </div>
+
+    <!-- description + spec table -->
+    <div class="pdp-body pdp-cols">
+      <section class="pdp-about rv">
+        <h2>About this piece</h2>
+        <div id="pAbout"></div>
+        <div class="pdp-feat">
+          <h3>What you get</h3>
+          <ul class="feat" id="pFeat"></ul>
+        </div>
+      </section>
+
+      <section class="pdp-specs rv">
+        <h2>Specifications</h2>
+        <div class="spec-wrap glass">
+          <table class="spectable">
+            <caption>Everything we can tell you before you buy</caption>
+            <tbody id="pSpecs"></tbody>
+          </table>
+        </div>
+        <p class="fineprint">Sizes are finished dimensions and can vary by up to half an inch — these are hand-made, not pressed. If a measurement is critical to your wall, ask us to check the actual piece before it ships.</p>
+      </section>
+    </div>
+
+    <!-- related -->
+    <section class="related">
+      <div class="head rv">
+        <div>
+          <span class="eyebrow">Also consider</span>
+          <h2>Pieces that work the same way.</h2>
+        </div>
+        <p>Same build, different scale or finish. Anything here can be made in a custom size.</p>
+      </div>
+      <div class="grid" id="related"></div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-lock" role="img" aria-label="Wallchemy"></div>
+        <p style="color:var(--fg-dim);font-size:15px;max-width:34ch;margin:0">Sandstone LED wall panels, made to order in Dhaka and delivered across Bangladesh.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="index.html#collection">All pieces</a></li>
+          <li><a href="index.html#craft">Materials</a></li>
+          <li><a href="index.html#order">How to order</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ordering</h4>
+        <ul>
+          <li><a href="index.html#faq">Delivery &amp; payment</a></li>
+          <li><a href="index.html#faq">Installation &amp; care</a></li>
+          <li><a href="https://m.me/Wallchemy.BD" target="_blank" rel="noopener">Message us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/Wallchemy.BD" target="_blank" rel="noopener">Facebook page</a></li>
+          <li><a href="https://www.facebook.com/groups/1007067638799316" target="_blank" rel="noopener">Facebook group</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© <span id="yr"></span> Wallchemy. The art of elegant walls.</span>
+      <span>Dhaka, Bangladesh</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="https://m.me/Wallchemy.BD" target="_blank" rel="noopener" aria-label="Message Wallchemy on Facebook">
+  <span class="fab-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.7c0 3.2 1.5 6 3.8 7.8v3.8l3.5-1.9c.9.3 1.8.4 2.7.4 5.6 0 10-4.1 10-9.7S17.6 2 12 2zm1 13-2.6-2.7L5.4 15l5.5-5.8 2.6 2.7L18.5 9 13 15z"/></svg></span>
+  <span>Message us</span>
+</a>
+
+<div class="toast glass" id="toast" role="status" aria-live="polite">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+  <span id="toastMsg"></span>
+</div>
+
+<script src="products.js"></script>
+<script src="site.js"></script>
+<script>
+initShared();
+
+const id = new URLSearchParams(location.search).get("id");
+const p  = PRODUCTS.find(x => x.id === id) || PRODUCTS[0];
+
+document.title = p.name + " — Wallchemy";
+$('meta[name="description"]').setAttribute("content", p.lead);
+
+$("#crumbCat").textContent = p.cat;
+$("#crumbName").textContent = p.name;
+$("#pTag").textContent   = p.tag;
+$("#pTitle").textContent = p.name;
+$("#pLead").textContent  = p.lead;
+$("#pPrice").innerHTML   = (p.was ? `<s>${taka(p.was)}</s>` : "") + taka(p.price);
+$("#pNote").textContent  = p.note;
+
+/* gallery */
+const gallery = $("#gallery"), thumbs = $("#thumbs");
+let shot = 0;
+gallery.insertAdjacentHTML("afterbegin", p.images.map((src,i)=>
+  `<img src="assets/${src}" alt="${p.name} — photo ${i+1}" class="${i===0?"on":""}" ${i?'loading="lazy"':''}>`).join(""));
+thumbs.innerHTML = p.images.map((src,i)=>
+  `<button class="${i===0?"on":""}" data-i="${i}" aria-label="Photo ${i+1}"><img src="assets/${src}" alt="" loading="lazy"></button>`).join("");
+
+/* a single-photo piece gets no arrows and no thumbnail rail */
+if(p.images.length < 2){
+  $(".gal-nav").style.display = "none";
+  thumbs.style.display = "none";
+}
+
+function showShot(i){
+  shot = (i + p.images.length) % p.images.length;
+  $$("img", gallery).forEach((im,k)=> im.classList.toggle("on", k===shot));
+  $$("button", thumbs).forEach((b,k)=> b.classList.toggle("on", k===shot));
+}
+$("#galNext").addEventListener("click", ()=>showShot(shot+1));
+$("#galPrev").addEventListener("click", ()=>showShot(shot-1));
+thumbs.addEventListener("click", e=>{ const b=e.target.closest("button"); if(b) showShot(+b.dataset.i); });
+addEventListener("keydown", e=>{
+  if(e.target.matches("input,textarea")) return;
+  if(e.key==="ArrowRight") showShot(shot+1);
+  if(e.key==="ArrowLeft")  showShot(shot-1);
+});
+let sx=0;
+gallery.addEventListener("touchstart", e=> sx=e.touches[0].clientX, {passive:true});
+gallery.addEventListener("touchend",   e=>{
+  const dx = e.changedTouches[0].clientX - sx;
+  if(Math.abs(dx) > 45) showShot(shot + (dx<0 ? 1 : -1));
+}, {passive:true});
+
+/* options */
+$("#pOpts").innerHTML = `
+  <div class="opt-row"><span class="eyebrow">Size</span>
+    <div class="opt-pills" data-opt="size">${p.sizes.map((s,i)=>
+      `<button aria-pressed="${i===0}">${s}</button>`).join("")}</div></div>
+  <div class="opt-row"><span class="eyebrow">Finish</span>
+    <div class="opt-pills" data-opt="finish">${p.finishes.map((f,i)=>
+      `<button aria-pressed="${i===0}">${f}</button>`).join("")}</div></div>`;
+$("#pOpts").addEventListener("click", e=>{
+  const b = e.target.closest("button"); if(!b) return;
+  [...b.parentElement.children].forEach(x=> x.setAttribute("aria-pressed", x===b));
+});
+const chosen = key => {
+  const on = $(`[data-opt="${key}"] [aria-pressed="true"]`);
+  return on ? on.textContent : "—";
+};
+
+/* copy blocks */
+$("#pAbout").innerHTML = p.about.map(t=>`<p>${t}</p>`).join("");
+$("#pFeat").innerHTML  = p.features.map(f=>`<li>${f}</li>`).join("");
+$("#pSpecs").innerHTML = Object.entries(p.specs)
+  .map(([k,v])=>`<tr><th scope="row">${k}</th><td>${v}</td></tr>`).join("");
+
+/* order */
+$("#orderBtn").addEventListener("click", ()=> sendOrder(p, chosen("size"), chosen("finish")));
+
+/* related — same category first, then anything else, capped at 4 */
+const rel = [...PRODUCTS.filter(x=>x.id!==p.id && x.cat===p.cat),
+             ...PRODUCTS.filter(x=>x.id!==p.id && x.cat!==p.cat)].slice(0,4);
+$("#related").innerHTML = rel.map(cardHTML).join("");
+
+/* product structured data for search engines */
+const ld = document.createElement("script");
+ld.type = "application/ld+json";
+ld.textContent = JSON.stringify({
+  "@context":"https://schema.org","@type":"Product",
+  "name":p.name,"description":p.lead,"image":location.origin + location.pathname.replace(/product\.html$/,"") + "assets/" + p.images[0],
+  "brand":{"@type":"Brand","name":"Wallchemy"},
+  "offers":{"@type":"Offer","priceCurrency":"BDT","price":p.price,
+            "availability":"https://schema.org/MadeToOrder","url":location.href}
+});
+document.head.appendChild(ld);
+
+watchReveals();
+</script>
+</body>
+</html>

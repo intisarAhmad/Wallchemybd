@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://REPLACE-WITH-YOUR-URL/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=lumen-arch</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=lumen-duo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=aurora</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=aurora-entry</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=romance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=romance-ivory</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=hare-hollow</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=swift-panel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=watercolour-arch</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://REPLACE-WITH-YOUR-URL/product.html?id=green-column</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>
