@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wallchemy — The Art of Elegant Walls</title>
+<meta name="description" content="Handmade sandstone-textured LED wall panels with living hydroponic vases. Lighting, sculpture and greenery in one piece. Made to order in Dhaka.">
+<meta name="theme-color" content="#100E0C">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wallchemy — The Art of Elegant Walls">
+<meta property="og:description" content="Sandstone-textured LED wall panels with living hydroponic vases. Made to order in Dhaka.">
+<meta property="og:image" content="assets/lumen-1.jpg">
+<link rel="icon" href="assets/mark-gold.png">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HomeGoodsStore",
+  "name":"Wallchemy",
+  "description":"Hand-finished sandstone LED wall panels with living hydroponic vases, made to order in Dhaka.",
+  "slogan":"The art of elegant walls",
+  "address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},
+  "areaServed":"Bangladesh",
+  "currenciesAccepted":"BDT",
+  "paymentAccepted":"Cash on delivery, bKash, Nagad, Bank transfer",
+  "sameAs":[
+    "https://www.facebook.com/Wallchemy.BD",
+    "https://www.facebook.com/groups/1007067638799316"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- refraction filter for the liquid-glass surfaces (used where supported) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="lgDistort" x="0%" y="0%" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.014" numOctaves="2" seed="7" result="n"/>
+    <feGaussianBlur in="n" stdDeviation="3" result="nb"/>
+    <feDisplacementMap in="SourceGraphic" in2="nb" scale="16" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<div class="loader"><div class="loader-mark"></div></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="halo halo-a" aria-hidden="true"></div>
+<div class="halo halo-b" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Wallchemy home">
+    <span class="brand-mark"></span>
+    <span class="brand-name">WALLCHEMY</span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#collection">Collection</a>
+    <a href="#craft">Craft</a>
+    <a href="#order">How to order</a>
+    <a href="#faq">FAQ</a>
+    <a href="#community">Community</a>
+  </nav>
+  <div class="nav-tools">
+    <button class="toggle" id="themeBtn" aria-label="Switch between dark and light" title="Switch theme">
+      <span class="toggle-thumb">
+        <svg class="ico-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="4.2" fill="currentColor" stroke="none"/><path d="M12 1.6v2.2M12 20.2v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M1.6 12h2.2M20.2 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+      </span>
+    </button>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main class="page" id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="shell hero-grid">
+    <div>
+      <div class="hero-lock" role="img" aria-label="Wallchemy — the art of elegant walls"></div>
+      <h1>
+        <span class="ln"><span>Light, stone</span></span>
+        <span class="ln"><span>and something</span></span>
+        <span class="ln"><span><em>still growing.</em></span></span>
+      </h1>
+      <p class="hero-copy hero-fade">Hand-finished sandstone panels with a warm LED halo and a real glass vase you fill yourself. One piece that lights a wall, softens a corner, and keeps a cutting alive.</p>
+      <div class="hero-cta hero-fade">
+        <a class="btn btn-primary" href="#collection">
+          See the collection
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#order">How ordering works</a>
+      </div>
+    </div>
+
+    <div class="hero-stage hero-fade">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-plate"><img src="assets/lumen-1.jpg" alt="Sandstone LED wall panel with a glass planter, lit warm against a bedroom wall" fetchpriority="high"></div>
+      <div class="hero-chip glass sweep refract">
+        <small>Signature piece</small>
+        <b>Lumen Arch</b>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><i></i></div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="ticker"></div>
+</div>
+
+<!-- ============ ETHOS ============ -->
+<section id="craft">
+  <div class="shell">
+    <div class="head rv">
+      <div>
+        <span class="eyebrow">What we make</span>
+        <h2>Three materials, worked until they behave like one.</h2>
+      </div>
+      <p>Every panel starts as a flat board and ends as a piece of wall furniture — textured by hand, wired for warm light, drilled for water.</p>
+    </div>
+    <div class="ethos-grid">
+      <article class="ethos-card glass sweep rv">
+        <span class="num">SANDSTONE</span>
+        <h3>Texture you can read from across the room</h3>
+        <p>A fine mineral grain is troweled over the panel face and cured, so the surface catches light the way plaster does — matte, uneven, alive. Borderless edges, no frame.</p>
+      </article>
+      <article class="ethos-card glass sweep rv">
+        <span class="num">LIGHT</span>
+        <h3>A halo, not a lamp</h3>
+        <p>Warm 3000K LEDs sit behind the panel and wash the wall instead of your eyes. Plug-in with an inline switch; remote-dimmable on selected pieces.</p>
+      </article>
+      <article class="ethos-card glass sweep rv">
+        <span class="num">WATER</span>
+        <h3>A vase that stays planted</h3>
+        <p>A borosilicate tube drops through the shelf and holds real water. Root a pothos cutting, drop in a single stem, or leave it empty — it reads as sculpture either way.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLLECTION ============ -->
+<section id="collection">
+  <div class="shell">
+    <div class="head rv">
+      <div>
+        <span class="eyebrow">Collection</span>
+        <h2>Made to order, one wall at a time.</h2>
+      </div>
+      <p>Prices are in Bangladeshi taka and include the LED module, glass vase and mounting hardware. Delivery inside Dhaka is free.</p>
+    </div>
+    <div class="filters rv" id="filters"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- ============ CRAFT SPLIT ============ -->
+<section>
+  <div class="shell split">
+    <div class="split-media rv" data-parallax>
+      <img src="assets/lumen-4.jpg" alt="Close detail of the sandstone grain and the glass water tube">
+    </div>
+    <div class="rv">
+      <span class="eyebrow">The detail</span>
+      <h2 style="font-size:clamp(30px,4vw,52px);margin:.3em 0 18px">Built to hang once and stay put.</h2>
+      <p style="color:var(--fg-dim);max-width:46ch;margin:0">Panels are light enough for a single nail on brick or a plug on plaster. The vase lifts out for cleaning, and the LED runs cool enough to leave on all evening.</p>
+      <ul class="spec">
+        <li><span>Face</span><span>Hand-troweled sandstone grain</span></li>
+        <li><span>Light</span><span>3000K warm white LED, wall-wash</span></li>
+        <li><span>Vase</span><span>Removable borosilicate glass tube</span></li>
+        <li><span>Depth</span><span>1.4" — clears most furniture</span></li>
+        <li><span>Fitting</span><span>Nail, screw or expansion plug</span></li>
+        <li><span>Lead time</span><span>5–7 days, made to order</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORDER ============ -->
+<section id="order">
+  <div class="shell">
+    <div class="head rv">
+      <div>
+        <span class="eyebrow">How to order</span>
+        <h2>Three steps, and it happens in Messenger.</h2>
+      </div>
+      <p>No account, no checkout form. Pick a piece and we finish the details in a chat, the way you would with any shop on Facebook.</p>
+    </div>
+    <div class="steps">
+      <article class="step glass sweep rv">
+        <h3>Choose your panel</h3>
+        <p>Open any piece, pick the size and finish you want, and check the dimensions against your wall.</p>
+      </article>
+      <article class="step glass sweep rv">
+        <h3>Send it to our page</h3>
+        <p>Tap <em>Order on Messenger</em>. Your choices get copied to the clipboard and our chat opens — paste and send.</p>
+      </article>
+      <article class="step glass sweep rv">
+        <h3>Confirm and receive</h3>
+        <p>We reply with availability and delivery. Cash on delivery in Dhaka, bKash or bank transfer elsewhere.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="shell">
+    <div class="head rv">
+      <div>
+        <span class="eyebrow">Before you message</span>
+        <h2>The questions we answer most.</h2>
+      </div>
+      <p>Reading this first means fewer messages back and forth, and a faster answer when you do write.</p>
+    </div>
+    <div class="qa-list" id="qaList"></div>
+  </div>
+</section>
+
+<!-- ============ COMMUNITY ============ -->
+<section id="community">
+  <div class="shell">
+    <div class="head rv">
+      <div>
+        <span class="eyebrow">Community</span>
+        <h2>See it on other people's walls first.</h2>
+      </div>
+      <p>New pieces, work-in-progress and customer photos land on the page and in the group before they reach this site.</p>
+    </div>
+    <div class="social">
+      <a class="social-card glass sweep rv" href="https://www.facebook.com/Wallchemy.BD" target="_blank" rel="noopener">
+        <span class="social-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></span>
+        <h3>Wallchemy on Facebook</h3>
+        <p>Product drops, pricing updates and the fastest way to reach us. Messages are usually answered the same day.</p>
+        <span class="card-open">Open the page <i></i></span>
+      </a>
+      <a class="social-card glass sweep rv" href="https://www.facebook.com/groups/1007067638799316" target="_blank" rel="noopener">
+        <span class="social-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <h3>The Wallchemy group</h3>
+        <p>Styling ideas, plant-care questions and photos from people who already have a panel up. Free to join.</p>
+        <span class="card-open">Join the group <i></i></span>
+      </a>
+    </div>
+    <div class="fb-embed glass rv">
+      <p class="fb-fallback">The live feed needs a moment — or a connection.<br>
+        <a href="https://www.facebook.com/Wallchemy.BD" target="_blank" rel="noopener">Open facebook.com/Wallchemy.BD</a></p>
+      <iframe title="Wallchemy Facebook page" loading="lazy" height="220" scrolling="no" frameborder="0" allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWallchemy.BD&tabs=timeline&width=1000&height=220&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="shell">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-lock" role="img" aria-label="Wallchemy"></div>
+        <p style="color:var(--fg-dim);font-size:14.5px;max-width:34ch;margin:0">Sandstone LED wall panels, made to order in Dhaka and delivered across Bangladesh.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#collection">All pieces</a></li>
+          <li><a href="#collection" data-filter="Planter panels">Planter panels</a></li>
+          <li><a href="#collection" data-filter="Lit panels">Lit panels</a></li>
+          <li><a href="#craft">Materials</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ordering</h4>
+        <ul>
+          <li><a href="#order">How it works</a></li>
+          <li><a href="https://m.me/Wallchemy.BD" target="_blank" rel="noopener">Message us</a></li>
+          <li><a href="#faq">Delivery &amp; payment</a></li>
+          <li><a href="#faq">Installation &amp; care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/Wallchemy.BD" target="_blank" rel="noopener">Facebook page</a></li>
+          <li><a href="https://www.facebook.com/groups/1007067638799316" target="_blank" rel="noopener">Facebook group</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© <span id="yr"></span> Wallchemy. The art of elegant walls.</span>
+      <span>Dhaka, Bangladesh</span>
+    </div>
+  </div>
+</footer>
+</main>
+
+
+
+<a class="fab" id="fab" href="https://m.me/Wallchemy.BD" target="_blank" rel="noopener" aria-label="Message Wallchemy on Facebook">
+  <span class="fab-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.7c0 3.2 1.5 6 3.8 7.8v3.8l3.5-1.9c.9.3 1.8.4 2.7.4 5.6 0 10-4.1 10-9.7S17.6 2 12 2zm1 13-2.6-2.7L5.4 15l5.5-5.8 2.6 2.7L18.5 9 13 15z"/></svg></span>
+  <span>Message us</span>
+</a>
+
+<div class="toast glass" id="toast" role="status" aria-live="polite">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+  <span id="toastMsg"></span>
+</div>
+
+<script src="products.js"></script>
+<script src="site.js"></script>
+<script>
+/* ---------- home page ---------- */
+initShared();
+
+/* ticker */
+(function(){
+  const words = ["Hand-troweled sandstone","Warm 3000K light","Living glass vase","Borderless edge",
+                 "Made to order in Dhaka","Free delivery inside Dhaka","1.4 inch profile"];
+  $("#ticker").innerHTML = [...words,...words].map(w => `<span class="ticker-item">${w}</span>`).join("");
+})();
+
+/* collection grid + filters */
+const grid = $("#grid"), filters = $("#filters");
+const cats = ["All pieces", ...new Set(PRODUCTS.map(p=>p.cat))];
+filters.innerHTML = cats.map((c,i)=>
+  `<button class="chip" data-cat="${c}" aria-pressed="${i===0}">${c}</button>`).join("");
+grid.innerHTML = PRODUCTS.map(cardHTML).join("");
+
+filters.addEventListener("click", e=>{
+  const b = e.target.closest(".chip"); if(!b) return;
+  $$(".chip").forEach(c=>c.setAttribute("aria-pressed", c===b));
+  const cat = b.dataset.cat;
+  $$(".card").forEach(c=> c.classList.toggle("hide", cat!=="All pieces" && c.dataset.cat!==cat));
+});
+$$("[data-filter]").forEach(a=> a.addEventListener("click", ()=>{
+  const chip = $(`.chip[data-cat="${a.dataset.filter}"]`);
+  if(chip) chip.click();
+}));
+
+/* parallax on the craft image */
+const par = $$("[data-parallax] img");
+addEventListener("scroll", ()=>{
+  par.forEach(img=>{
+    const r = img.parentElement.getBoundingClientRect();
+    if(r.bottom < 0 || r.top > innerHeight) return;
+    const p = (r.top + r.height/2 - innerHeight/2) / innerHeight;
+    img.style.transform = `translateY(${(-p*6).toFixed(2)}%)`;
+  });
+}, {passive:true});
+
+/* FAQ */
+const FAQ = [
+  ["How long does a piece take?",
+   "Every panel is made to order, so allow 5\u20137 days from the day we confirm. Delivery inside Dhaka happens the same week; courier to other districts adds 2\u20133 days. If you need something for a specific date, say so in the first message and we will tell you honestly whether it is possible."],
+  ["How do I pay?",
+   "Cash on delivery anywhere inside Dhaka \u2014 you pay the rider. For delivery outside Dhaka we ask for the courier charge in advance by bKash or Nagad, and the rest on delivery. Bank transfer is fine for larger or multi-piece orders."],
+  ["What does delivery cost?",
+   "Free inside Dhaka city. Outside Dhaka we use a national courier and charge exactly what they charge us \u2014 usually \u09f3150\u2013350 depending on the size of the panel. Nothing is added on top."],
+  ["Can I hang it myself?",
+   "Yes, and most people do. A panel this size needs one nail on brick or a single expansion plug on plaster \u2014 the plug, screw and a paper template come in the box. It takes about ten minutes. The largest pieces need four or six fixings and we would rather send someone."],
+  ["Does it need a power socket?",
+   "Most pieces are plug-in, not battery. The cord is 1.8m and braided, and it exits bottom-right by default \u2014 tell us in the chat if your socket is on the left. The Oakstone Relief needs no power at all."],
+  ["What can I put in the vase?",
+   "Anything that roots in water: money plant, pothos, syngonium, lucky bamboo, or a single cut stem. Change the water once a week and rinse the tube every few weeks. The tube lifts straight out. Plants are not included."],
+  ["Can I get a different size or colour?",
+   "Often, yes. Message the page with your wall width and height and a photo if you have one, and we will tell you what is possible and what it would cost. Custom pieces take 10\u201314 days instead of 5\u20137."],
+  ["What if it arrives damaged?",
+   "Open the box in front of the rider and check it. If anything is cracked or the light does not come on, send us a photo the same day and we replace it free. The sandstone face is hand-finished, so small variations in the grain are normal and are not damage."]
+];
+$("#qaList").innerHTML = FAQ.map(([q,a],i)=>`
+  <div class="qa glass rv" data-open="false">
+    <button class="qa-q" aria-expanded="false" aria-controls="qa-${i}">
+      <span>${q}</span><span class="qa-sign" aria-hidden="true"></span>
+    </button>
+    <div class="qa-a" id="qa-${i}"><div><p>${a}</p></div></div>
+  </div>`).join("");
+$("#qaList").addEventListener("click", e=>{
+  const btn = e.target.closest(".qa-q"); if(!btn) return;
+  const qa = btn.parentElement;
+  const open = qa.dataset.open !== "true";
+  $$(".qa").forEach(o=>{ o.dataset.open="false"; $(".qa-q",o).setAttribute("aria-expanded","false"); });
+  if(open){ qa.dataset.open="true"; btn.setAttribute("aria-expanded","true"); }
+});
+
+watchReveals();
+</script>
+</body>
+</html>
